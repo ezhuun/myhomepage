@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>ez homepage!!</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- style -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <link rel="stylesheet" href="./css/common.css">
+
+  <!-- js -->
+  <!-- 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   -->
+  <script src="./js/common.js"></script>
+
+  
+</head>
+<body>
+	
+<!-- 워터마크 효과(배경투명) -->
+<div id="markup"></div>
+
+<!-- 알림창 -->
+<div id="myalert" style="display: none;">
+<div class="mark"></div>
+	<div class="row">
+		<div class="col-sm-offset-4 col-sm-4 col-sm-offset-4" style="z-index:9999;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">알림</h4>
+				</div>
+				<div class="modal-body">
+					<p>준비중입니다</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" onclick="document.getElementById('myalert').style.display='none';">닫기</button>
+				</div>
+			</div>
+
+		</div>
+		
+	</div>
+</div>
+  
+	<!-- 전체 -->
+	<div id="wrap">
+		<!-- 왼쪽메뉴 -->
+		<div id="wrap-left" class="out">
+			
+			<div class="left_menu">
+				<ul>
+					<li>
+						<a href="./index.html">
+						<span class="glyphicon glyphicon-qrcode" style="font-size:25px;"></span> <span class="logo_title">ezhomepage</span>
+						</a>
+						<br/><br/>
+					</li>
+					<li class="toggleTop">
+						<a href="#" class="active" onclick="return false">
+							월요일[active]
+							<span class="glyphicon glyphicon-chevron-down" style="font-size:8px;"></span>
+						</a>
+						<ul class="toggleSub">
+							<li><a href="./template.html">- Template</a>
+								<ul>
+									<li><a href="javascript:myalert();">= 먹고</a></li>
+									<li><a href="javascript:myalert();">= 간식</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:myalert();">- 점심</a></li>
+							<li><a href="javascript:myalert();">- 저녁</a></li>
+						</ul>
+					</li>
+					<li class="toggleTop">
+						<a href="#" onclick="return false">
+							화요일
+							<span class="glyphicon glyphicon-chevron-down" style="font-size:8px;"></span>
+						</a>
+						<ul class="toggleSub">
+							<li><a href="javascript:myalert();">- 아침</a>
+								<ul>
+									<li><a href="javascript:myalert();">= 먹고</a></li>
+									<li><a href="javascript:myalert();">= 간식</a></li>
+								</ul>
+							</li>
+							<li><a href="javascript:myalert();">- 점심</a></li>
+							<li><a href="javascript:myalert();">- 저녁</a></li>
+						</ul>
+					</li>
+					<li class="toggleTop"><a href="#" onclick="return false">수요일</a></li>
+					<li class="toggleTop"><a href="#" onclick="return false">목요일</a></li>
+					<li class="toggleTop"><a href="#" onclick="return false">금요일</a></li>
+					<li class="toggleTop"><a href="#" onclick="return false">토요일</a></li>
+					<li class="toggleTop"><a href="#" onclick="return false">일요일</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- 오른쪽 -->
+		<div id="wrap-rigth" class="wexp">
+			<!-- Header -->
+			
+			<div id="right_header" class="wexp">
+				<div onclick="toggleLeftMenu();" style="position:relative; display:inline-block; cursor:pointer; padding:10px;">
+					<span id="toggleMenu" class="glyphicon glyphicon-th-list" style="cursor:pointer;"></span> Menu
+				</div>
+				<div style="float:right; padding:10px 0px;">
+					<ul>
+						<li><a href="javascript:myalert();"><span class="glyphicon glyphicon-pencil"></span> Sign up</a></li>
+						<li><a href="./login.html"><span class="glyphicon glyphicon-heart-empty"></span> Sign in</a></li>
+						<li><a href="javascript:myalert();"><span class="glyphicon glyphicon-heart"></span> Sign out</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Content -->
+			<div id="right_content">
+
+				<!-- 여기부터 내용을 입력하세요 -->
+				<div id="content-container">
+					<div id="inner-container">
+					
+						<div class="content_notice">
+							<div style="position:relative; display:inline-block; top:35%;">
+								안녕하세요!!!<br>도움이 필요하시면 아래버튼을 클릭해주세요<br><br>
+								<button class="btn btn-success btn-lg">Sign Up</button>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-sm-9 col-sm-push-3">
+								<div class="row">
+									<div id="inner-center" class="col-sm-8">CENTER</div>
+									<div id="inner-right" class="col-sm-4">RIGHT</div>
+								</div>
+							</div>
+							<div id="inner-left" class="col-sm-3 col-sm-pull-9">
+								<div class="profile">
+									<div class="profile-header">
+										<img src="./images/profile-default-male.png" class="img-circle img-thumbnail img-responsive">
+										<span>Lee ji hun</span>
+										<span>ljhadf@gmail.com</span>
+									</div>
+									<div class="profile-content">
+										<div class="profile-link" style="">
+											<p><span class="glyphicon glyphicon-globe"></span> your Address</p>
+											<p><span class="glyphicon glyphicon-phone"></span> your Mobile</p>
+											<p><span class="glyphicon glyphicon-cog"></span> your Profile</p>
+										</div>
+									</div>
+									<div class="profile-footer">Welcome Lee</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 여기까지 내용을 입력하세요 -->
+
+			</div>
+
+			<!-- Footer -->
+			
+			<hr/>
+			<div id="right_footer">
+				<span style="position:absolute; width:100%; text-align:center; bottom:10px; font-weight:bold; font-weight:normal;">Copyright 2019. </span>
+			</div>
+
+		</div>
+		<!-- 오른쪽 끝 -->
+
+	</div>
+	<!-- 전체 끝-->
+</body>
+ 
+</html>
