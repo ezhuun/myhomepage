@@ -106,7 +106,6 @@ a, a:link, a:hover, a:active, a:visited{text-decoration: none; color:inherit;}
 		margin-bottom: 1.25rem;
 	}
 }
-
 .card-head{display:block;}
 .card-head .writer{position:absolute; top:5px; right:5px; color:#9271F8;}
 .card-head .card-title{}
