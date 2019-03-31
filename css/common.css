@@ -79,6 +79,40 @@ a, a:link, a:hover, a:active, a:visited{text-decoration: none; color:inherit;}
 .overlay-img:hover img {-ms-transform: scale(1.1, 1.1); -webkit-transform: scale(1.1, 1.1); transform: scale(1.1, 1.1); }
 
 
+.postCardBox{
+	position: relative;
+}
+.postCard{
+	vertical-align:top;
+	display:inline-block;
+	background-color:#efefef;
+	padding:10px;
+	position:relative;
+	width: calc((100% - 3.5rem) / 2);
+	margin-top:1.5rem;
+	margin-bottom:1.5rem;
+	margin-right:1.5rem;
+	-webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);
+}
+@media (max-width: 1920px) {
+	.postCard {
+		width: calc(50% - 1.75rem);
+	}
+}
+@media (max-width: 1024px) {
+	.postCard {
+		width: calc(100% - 1.75rem);
+		margin-top: 1.25rem;
+		margin-bottom: 1.25rem;
+	}
+}
+
+.card-head{display:block;}
+.card-head .writer{position:absolute; top:5px; right:5px; color:#9271F8;}
+.card-head .card-title{}
+.card-head .card-subinfo{display:block; color:#E77372}
+.card-content{margin:10px 0; color:#8AA6C1;}
 
 
 
