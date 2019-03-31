@@ -62,7 +62,7 @@ a, a:link, a:hover, a:active, a:visited{text-decoration: none; color:inherit;}
 #inner-center{border-top:1px solid #efefef;}
 #inner-right { border-top:1px solid #efefef; border-bottom:1px solid #efefef; }
 .content_notice{ display:none; }
-@media (min-width: 768px) {
+@media (min-width: 970px) {
 	#inner-left, #inner-center, #inner-right{ min-height:1000px; padding:0px 10px !important; }
 	#inner-right { border:none; }
 	#inner-center {border-top:none; border-left:1px solid #efefef; border-right:1px solid #efefef;}
@@ -85,7 +85,7 @@ a, a:link, a:hover, a:active, a:visited{text-decoration: none; color:inherit;}
 .postCard{
 	vertical-align:top;
 	display:inline-block;
-	background-color:#efefef;
+	background-color:#F2F2F2;
 	padding:10px;
 	position:relative;
 	margin-top:1.5rem;
